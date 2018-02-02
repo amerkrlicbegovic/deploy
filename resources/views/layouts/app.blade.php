@@ -26,7 +26,6 @@
     @yield('scripts')
   </head>
 
-  <body>
     <div id="app">
     <!-- Topbar -->
     <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky">
@@ -125,5 +124,6 @@
     <script src="{{ asset('assets/js/thesaas.min.js') }}"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{asset('sw.js')}}"></script>
   </body>
 </html>

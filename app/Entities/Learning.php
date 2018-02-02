@@ -1,16 +1,16 @@
 <?php 
 
-namespace Bahdcasts\Entities;
+namespace Klikskola\Entities;
 
 use Redis;
-use Bahdcasts\Series;
-use Bahdcasts\Lesson;
+use Klikskola\Series;
+use Klikskola\Lesson;
 
 trait Learning {
     /**
      * Mark a lesson as completed for a user
      *
-     * @param [Bahdcasts\Lesson] $lesson
+     * @param [Klikskola\Lesson] $lesson
      * @return void
      */
     public function completeLesson($lesson) {
@@ -20,7 +20,7 @@ trait Learning {
     /**
      * Get percentage completed for a series for a user
      *
-     * @param [Bahdcasts\Series] $series
+     * @param [Klikskola\Series] $series
      * @return void
      */
     public function percentageCompletedForSeries($series) {
@@ -33,7 +33,7 @@ trait Learning {
     /**
      * Get number of completed lessons for a series
      *
-     * @param [Bahdcasts\Series] $series
+     * @param [Klikskola\Series] $series
      * @return void
      */
     public function getNumberOfCompletedLessonsForASeries($series) {
@@ -43,7 +43,7 @@ trait Learning {
     /**
      * Get array of completed lessons ids for a series
      *
-     * @param [Bahdcasts\Series] $series
+     * @param [Klikskola\Series] $series
      * @return array
      */
     public function getCompletedLessonsForASeries($series) {
@@ -53,7 +53,7 @@ trait Learning {
     /**
      * Check if a user has started a series
      *
-     * @param [Bahdcasts\Series] $series
+     * @param [Klikskola\Series] $series
      * @return boolean
      */
     public function hasStartedSeries($series) {
@@ -63,8 +63,8 @@ trait Learning {
     /**
      * Get all completed lessons for a series
      *
-     * @param [Bahdcasts\Series] $series
-     * @return \Illuminate\Support\Collection(Bahdcasts\Lesson)
+     * @param [Klikskola\Series] $series
+     * @return \Illuminate\Support\Collection(Klikskola\Lesson)
      */
     public function getCompletedLessons($series) {
         // 1, 2, 4
@@ -76,7 +76,7 @@ trait Learning {
     /**
      * Check if user has completed a lesson
      *
-     * @param [Bahdcasts\Lesson] $lesson
+     * @param [Klikskola\Lesson] $lesson
      * @return boolean
      */
     public function hasCompletedLesson($lesson) {
@@ -131,8 +131,8 @@ trait Learning {
     /**
      * Get the next lesson the user should watch
      *
-     * @param [Bahdcasts\Series] $series
-     * @return Bahdcasts\Lesson
+     * @param [Klikskola\Series] $series
+     * @return Klikskola\Lesson
      */
     public function getNextLessonToWatch($series) {
         $lessonIds = $this->getCompletedLessonsForASeries($series);

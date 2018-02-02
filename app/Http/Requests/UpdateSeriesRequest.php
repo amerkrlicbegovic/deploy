@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts\Http\Requests;
+namespace Klikskola\Http\Requests;
 
 class UpdateSeriesRequest extends SeriesRequest
 {
@@ -30,7 +30,7 @@ class UpdateSeriesRequest extends SeriesRequest
     /**
      * Update a series into database
      *
-     * @param [Bahdcasts\Series] $series
+     * @param [Klikskola\Series] $series
      * @return void
      */
     public function updateSeries($series) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts;
+namespace Klikskola;
 
 use Illuminate\Database\Eloquent\Model;
 

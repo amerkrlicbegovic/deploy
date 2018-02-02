@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts\Providers;
+namespace Klikskola\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Bahdcasts\Events\Event' => [
-            'Bahdcasts\Listeners\EventListener',
+        'Klikskola\Events\Event' => [
+            'Klikskola\Listeners\EventListener',
         ],
     ];
 

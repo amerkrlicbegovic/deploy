@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts\Providers;
+namespace Klikskola\Providers;
 
 use Blade;
 use Illuminate\Support\ServiceProvider;

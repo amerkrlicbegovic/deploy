@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers;
+namespace Klikskola\Http\Controllers;
 
 use Illuminate\Http\Request;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts\Http\Requests;
+namespace Klikskola\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers\Auth;
+namespace Klikskola\Http\Controllers\Auth;
 
 use Mail;
-use Bahdcasts\User;
+use Klikskola\User;
 use Illuminate\Http\Request;
-use Bahdcasts\Mail\ConfirmYourEmail;
-use Bahdcasts\Http\Controllers\Controller;
+use Klikskola\Mail\ConfirmYourEmail;
+use Klikskola\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -61,7 +61,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \Bahdcasts\User
+     * @return \Klikskola\User
      */
     protected function create(array $data)
     {

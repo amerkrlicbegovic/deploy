@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Bahdcasts\User::class,
+        'model' => Klikskola\User::class,
         'key' => env('pk_test_7esySyagky1ea2QQ16XGq8NY'),
         'secret' => env('sk_test_FYQc0CUVvqOrTPfmAsCXt44M'),
     ],

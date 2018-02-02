@@ -1,8 +1,8 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers;
+namespace Klikskola\Http\Controllers;
 
-use Bahdcasts\User;
+use Klikskola\User;
 use Illuminate\Http\Request;
 
 class ProfilesController extends Controller

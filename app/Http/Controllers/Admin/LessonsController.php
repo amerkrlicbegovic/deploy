@@ -1,13 +1,13 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers\Admin;
+namespace Klikskola\Http\Controllers\Admin;
 
-use Bahdcasts\Series;
-use Bahdcasts\Lesson;
+use Klikskola\Series;
+use Klikskola\Lesson;
 use Illuminate\Http\Request;
-use Bahdcasts\Http\Controllers\Controller;
-use Bahdcasts\Http\Requests\UpdateLessonRequest;
-use Bahdcasts\Http\Requests\CreateLessonRequest;
+use Klikskola\Http\Controllers\Controller;
+use Klikskola\Http\Requests\UpdateLessonRequest;
+use Klikskola\Http\Requests\CreateLessonRequest;
 
 class LessonsController extends Controller
 {

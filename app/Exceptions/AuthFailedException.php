@@ -1,6 +1,6 @@
 <?php 
 
-namespace Bahdcasts\Exceptions;
+namespace Klikskola\Exceptions;
 
 use Exception;
 

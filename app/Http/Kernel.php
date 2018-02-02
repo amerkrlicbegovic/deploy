@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts\Http;
+namespace Klikskola\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -16,9 +16,9 @@ class Kernel extends HttpKernel
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
-        \Bahdcasts\Http\Middleware\TrimStrings::class,
+        \Klikskola\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-        \Bahdcasts\Http\Middleware\TrustProxies::class,
+        \Klikskola\Http\Middleware\TrustProxies::class,
     ];
 
     /**
@@ -28,12 +28,12 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \Bahdcasts\Http\Middleware\EncryptCookies::class,
+            \Klikskola\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \Bahdcasts\Http\Middleware\VerifyCsrfToken::class,
+            \Klikskola\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
@@ -43,7 +43,7 @@ class Kernel extends HttpKernel
         ],
         'admin' => [
             'web',
-            \Bahdcasts\Http\Middleware\Administrator::class
+            \Klikskola\Http\Middleware\Administrator::class
         ]
     ];
 
@@ -59,7 +59,7 @@ class Kernel extends HttpKernel
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
-        'guest' => \Bahdcasts\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \Klikskola\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }

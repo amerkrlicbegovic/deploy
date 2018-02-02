@@ -1,8 +1,8 @@
 <?php
 
-namespace Bahdcasts\Providers;
+namespace Klikskola\Providers;
 
-use Bahdcasts\Series;
+use Klikskola\Series;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -15,7 +15,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Bahdcasts\Http\Controllers';
+    protected $namespace = 'Klikskola\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

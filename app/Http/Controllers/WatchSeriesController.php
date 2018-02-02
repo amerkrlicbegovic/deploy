@@ -1,9 +1,9 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers;
+namespace Klikskola\Http\Controllers;
 
-use Bahdcasts\Lesson;
-use Bahdcasts\Series;
+use Klikskola\Lesson;
+use Klikskola\Series;
 use Illuminate\Http\Request;
 
 class WatchSeriesController extends Controller
@@ -11,7 +11,7 @@ class WatchSeriesController extends Controller
     /**
      * Watch a series
      *
-     * @param Bahdcasts\Series $series
+     * @param Klikskola\Series $series
      * @return redirect
      */
     public function index(Series $series) {
@@ -33,8 +33,8 @@ class WatchSeriesController extends Controller
     /**
      * Show a lesson page
      *
-     * @param Bahdcasts\Series $series
-     * @param Bahdcasts\Lesson $lesson
+     * @param Klikskola\Series $series
+     * @param Klikskola\Lesson $lesson
      * @return view
      */
     public function showLesson(Series $series, Lesson $lesson) {
@@ -51,7 +51,7 @@ class WatchSeriesController extends Controller
     /**
      * Complete a lesson via ajax
      *
-     * @param Bahdcasts\Lesson $lesson
+     * @param Klikskola\Lesson $lesson
      * @return json response
      */
     public function completeLesson(Lesson $lesson) {

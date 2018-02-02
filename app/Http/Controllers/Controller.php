@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers;
+namespace Klikskola\Http\Controllers;
 
 use SEO;
 use Illuminate\Foundation\Bus\DispatchesJobs;

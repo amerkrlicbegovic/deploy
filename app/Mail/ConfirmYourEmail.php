@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts\Mail;
+namespace Klikskola\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;

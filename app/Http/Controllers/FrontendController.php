@@ -1,9 +1,9 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers;
+namespace Klikskola\Http\Controllers;
 
 use SEO;
-use Bahdcasts\Series;
+use Klikskola\Series;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller

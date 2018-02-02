@@ -1,8 +1,8 @@
 <?php
 
-namespace Bahdcasts\Http\Requests;
+namespace Klikskola\Http\Requests;
 
-use Bahdcasts\Series;
+use Klikskola\Series;
 
 class CreateSeriesRequest extends SeriesRequest
 {

@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(Bahdcasts\User::class, function (Faker $faker) {
+$factory->define(Klikskola\User::class, function (Faker $faker) {
     static $password;
     $name = $faker->name;
     return [

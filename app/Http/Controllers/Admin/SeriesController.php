@@ -1,12 +1,12 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers\Admin;
+namespace Klikskola\Http\Controllers\Admin;
 
-use Bahdcasts\Series;
+use Klikskola\Series;
 use Illuminate\Http\Request;
-use Bahdcasts\Http\Controllers\Controller;
-use Bahdcasts\Http\Requests\CreateSeriesRequest;
-use Bahdcasts\Http\Requests\UpdateSeriesRequest;
+use Klikskola\Http\Controllers\Controller;
+use Klikskola\Http\Requests\CreateSeriesRequest;
+use Klikskola\Http\Requests\UpdateSeriesRequest;
 
 class SeriesController extends Controller
 {

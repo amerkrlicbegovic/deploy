@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts;
+namespace Klikskola;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -27,7 +27,7 @@ class Lesson extends Model
     /**
      * Get next lesson after $this 
      *
-     * @return \Bahdcasts\Lesson
+     * @return \Klikskola\Lesson
      */
     public function getNextLesson() {
         $nextLesson = $this->series->lessons()->where('episode_number', '>', $this->episode_number)
@@ -44,7 +44,7 @@ class Lesson extends Model
     /**
      * Get previous lesson for $this
      *
-     * @return \Bahdcasts\Lesson
+     * @return \Klikskola\Lesson
      */
     public function getPrevLesson() {
         $prevLesson = $this->series->lessons()->where('episode_number', '<', $this->episode_number)

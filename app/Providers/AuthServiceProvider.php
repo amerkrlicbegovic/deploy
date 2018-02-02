@@ -1,6 +1,6 @@
 <?php
 
-namespace Bahdcasts\Providers;
+namespace Klikskola\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Bahdcasts\Model' => 'Bahdcasts\Policies\ModelPolicy',
+        'Klikskola\Model' => 'Klikskola\Policies\ModelPolicy',
     ];
 
     /**

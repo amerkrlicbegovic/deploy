@@ -1,10 +1,10 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers\Auth;
+namespace Klikskola\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
-use Bahdcasts\Http\Controllers\Controller;
-use Bahdcasts\Exceptions\AuthFailedException;
+use Klikskola\Http\Controllers\Controller;
+use Klikskola\Exceptions\AuthFailedException;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller

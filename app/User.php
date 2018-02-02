@@ -1,10 +1,10 @@
 <?php
 
-namespace Bahdcasts;
+namespace Klikskola;
 
 use Redis;
 use Laravel\Cashier\Billable;
-use Bahdcasts\Entities\Learning;
+use Klikskola\Entities\Learning;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

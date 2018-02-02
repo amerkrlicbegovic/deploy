@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Bahdcasts\Providers\AppServiceProvider::class,
-        Bahdcasts\Providers\AuthServiceProvider::class,
-        // Bahdcasts\Providers\BroadcastServiceProvider::class,
-        Bahdcasts\Providers\EventServiceProvider::class,
-        Bahdcasts\Providers\RouteServiceProvider::class,
+        Klikskola\Providers\AppServiceProvider::class,
+        Klikskola\Providers\AuthServiceProvider::class,
+        // Klikskola\Providers\BroadcastServiceProvider::class,
+        Klikskola\Providers\EventServiceProvider::class,
+        Klikskola\Providers\RouteServiceProvider::class,
 
     ],
 

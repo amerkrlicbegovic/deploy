@@ -1,8 +1,8 @@
 <?php
 
-namespace Bahdcasts\Http\Controllers\Auth;
+namespace Klikskola\Http\Controllers\Auth;
 
-use Bahdcasts\Http\Controllers\Controller;
+use Klikskola\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

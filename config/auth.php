@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Bahdcasts\User::class,
+            'model' => Klikskola\User::class,
         ],
 
         // 'users' => [
