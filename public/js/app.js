@@ -1084,8 +1084,6 @@ __webpack_require__(14);
 
 window.Vue = __webpack_require__(35);
 
-Vue.config.productionTip = false
-
 window.events = new Vue();
 
 window.noty = function (notification) {
@@ -29575,7 +29573,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "text-center text-muted fs-13 mt-20"
   }, [_vm._v("Nisam registrovan "), _c('a', {
     attrs: {
-      "href": "register"
+      "href": "/register"
     }
   }, [_vm._v("Kreiraj račun")])])
 }]}
@@ -32163,6 +32161,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "data-vimeo-id": _vm.lesson.video_id,
       "data-vimeo-width": "900",
+      "data-vimeo-responsive": "1",
       "id": "handstick"
     }
   }) : _vm._e()])
@@ -32507,7 +32506,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "form-control",
     attrs: {
       "type": "text",
-      "placeholder": "Naslov kursa"
+      "placeholder": "Naslov lekcije"
     },
     domProps: {
       "value": (_vm.lesson.title)
@@ -32553,7 +32552,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "form-control",
     attrs: {
       "type": "number",
-      "placeholder": "Broj epizode"
+      "placeholder": "Broj lekcije"
     },
     domProps: {
       "value": (_vm.lesson.episode_number)
@@ -32628,7 +32627,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "button",
       "data-dismiss": "modal"
     }
-  }, [_vm._v("Close")]), _vm._v(" "), (_vm.editing) ? _c('button', {
+  }, [_vm._v("Zatvori")]), _vm._v(" "), (_vm.editing) ? _c('button', {
     staticClass: "btn btn-primary",
     attrs: {
       "type": "button"
@@ -32638,7 +32637,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.updateLesson()
       }
     }
-  }, [_vm._v("Spasi epizodu")]) : _c('button', {
+  }, [_vm._v("Spasi lekciju")]) : _c('button', {
     staticClass: "btn btn-primary",
     attrs: {
       "type": "button"
@@ -32648,7 +32647,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.createLesson()
       }
     }
-  }, [_vm._v("Kreiraj epizodu")])])])])])
+  }, [_vm._v("Kreiraj lekciju")])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "modal-header"
@@ -32657,7 +32656,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "exampleModalLabel"
     }
-  }, [_vm._v("Kreiraj novi kurs")]), _vm._v(" "), _c('button', {
+  }, [_vm._v("Kreiraj novu lekciju")]), _vm._v(" "), _c('button', {
     staticClass: "close",
     attrs: {
       "type": "button",
@@ -32698,7 +32697,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.createNewLesson()
       }
     }
-  }, [_vm._v("\n\t\t\tKreiraj novi kurs\n\t\t")])]), _vm._v(" "), _c('div', {}, [_c('ul', {
+  }, [_vm._v("\n\t\t\tKreiraj novu lekciju\n\t\t")])]), _vm._v(" "), _c('div', {}, [_c('ul', {
     staticClass: "list-group d-flex"
   }, _vm._l((_vm.lessons), function(lesson, key) {
     return _c('li', {

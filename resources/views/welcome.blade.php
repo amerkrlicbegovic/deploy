@@ -122,7 +122,7 @@
             </div>
         </div>
     </section>
-
+@endsection
 @section('content')
 
     <section class="section bg-gray">
@@ -151,4 +151,4 @@
 
     </section>
 
-@stop
+@endsection
