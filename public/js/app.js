@@ -1084,6 +1084,8 @@ __webpack_require__(14);
 
 window.Vue = __webpack_require__(35);
 
+Vue.config.productionTip = false
+
 window.events = new Vue();
 
 window.noty = function (notification) {
