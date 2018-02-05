@@ -22,6 +22,7 @@
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
 
+    <script src="{{asset('sw.js')}}"></script>
 
     @yield('scripts')
   </head>
@@ -124,7 +125,6 @@
     <script src="{{ asset('assets/js/thesaas.min.js') }}"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{asset('sw.js')}}"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113572725-1"></script>
